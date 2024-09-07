@@ -1,0 +1,44 @@
+
+
+#conditionals
+'''x=int(input("ENter a number:"))
+if x%2==0:
+  print("Number is even")
+else:
+  print("Number is odd")'''
+
+
+#age and gender
+'''age=int(input("How old are you?"))
+gender=input("male or female:")
+if age>=18:
+  if gender=="male":
+    print("You are a male adult")
+  else:
+    print("you are a female adult")
+else:
+  if gender=="male":
+    print("You are a male child")
+  else:
+    print("you are a female child")'''
+
+'''age=int(input("How old are you?"))
+gender=input("male or female:")
+if age>=18 and gender=="male":
+  print("You are a male adut")
+elif age>=18 and gender=="female":
+  print("you are a female adult")
+elif age<18 and gender=="male":
+  print("You are male child")
+elif age<18 and gender=="female":
+  print("You are female child")
+else:
+  print("invalid input")'''
+
+
+age=int(input("What is the age?: "))
+weight=int(input("What is the weight?: "))
+if age>12 or weight>35:
+  print("You are eligible. Move ahead to purchase ticket.")
+else:
+  print("Sorry you are not eligible. Thank you")
