@@ -1,0 +1,30 @@
+#Program to print a store purchase receipt.
+#Author: FaraazM
+
+import os
+#taking input amounts for purchases
+grocery=float(input("Enter the amount for grocery($CAD): "))
+electronics=float(input("Enter the amount for electronics($CAD):"))
+clothing=float(input("Enter the amount for clothing($CAD):"))
+#def calculate_total(grocery,electronics,clothing):
+  #Tax rate
+tax_rate=0.13
+  #calculate total excluding tax
+total_before_tax= grocery + electronics + clothing
+#calculate tax
+total_tax= total_before_tax * tax_rate
+#calculate final total
+total_final=total_before_tax + total_tax
+os.system('clear')
+print("                   Canada Goods" )
+print("                   North York, ON ")
+print()
+print("D: 9/7/2024 12:10:42")
+print("*"*60)
+
+print(f"Grocery                       CAD${grocery}")
+print(f"Electronics                   CAD${electronics}")
+print(f"Clothing                      CAD${clothing}")
+print("="*50)
+print(f"TAX                            CAD${total_tax}")
+print(f"Total                          CAD${total_final}")
