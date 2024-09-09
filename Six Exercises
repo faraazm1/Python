@@ -1,0 +1,140 @@
+#Exercise 1
+#Calculate Sum of three numbers
+
+'''num1=int(input("Enter the first number= "))
+num2=int(input("Enter the second number= "))
+num3=int(input("Enter the third number= "))
+if num1==num2==num3:
+  print((num1+num2+num3)*3)
+elif  num1==num2 or num2==num3 or num3==num1:
+  print((num1+num2+num3)*2)
+elif num1!=num2!=num3:
+  print(num1+num2+num3)'''
+  
+#Exercise 2
+#Perform conditional actions on given integer
+'''n=int(input("Enter the integer: "))
+if n%2==0:
+  if n in range(2,6):
+    print("Range B")
+  elif n in range(6,21):
+    print("Range C")
+  elif n>20:
+    print("Range D")
+else:
+  print("Range A")'''
+
+#Exercise 3
+#Fermat's theorem
+'''n=int(input("Enter the value of n: "))
+a=int(input("Enter the value of a: "))
+b=int(input("Enter the value of b: "))
+c=int(input("Enter the value of c: "))
+Fermat=((a**n) + (b**n) == (c**n))
+if n>2 and Fermat:
+  print("Fermat was wrong")
+else:
+  print("No, that doesnt work")'''
+
+#exercise 4:
+#Obtain three number inputs and find the largest and smallest of the three numbers
+#method1:
+'''n1=int(input("num1:"))
+n2=int(input("num2:"))
+n3=int(input("num3:"))
+
+if n1>n2 and n1>n3:
+  print(f"{n1} is the greatest")
+elif n2>n1 and n2>n3:
+  print(f"{n2} is the greatest")
+elif n3>n1 and n3>n2:
+  print(f"{n3} is the greatest")
+
+if n1<n2 and n1<n3:
+  print(f"{n1} is the smallest")
+elif n2<n1 and n2<n3:
+  print(f"{n2} is the smallest")
+elif n3<n1 and n3<n2:
+  print(f"{n3} is the smallest")'''
+
+#method 2:
+
+
+'''n1=int(input("num1:"))
+n2=int(input("num2:"))
+n3=int(input("num3:"))
+largest=max(n1,n2,n3)
+smallest=min(n1,n2,n3)
+print(f"Largest number is {largest}")
+print(f"Smallest number is {smallest}")'''
+
+#Exercise 5:
+#Obtain date, month and year inputs and find the next date
+'''date=int(input("Enter the day:"))
+month=int(input("Enter the month:"))
+year=int(input("Enter the year:"))
+nextdate=0
+print(f"Current date is {date}/{month}/{year}")
+
+if (month==1 or month ==3 or month==5 or month==7 or month==8 or month==10) and date==31:
+  nextdate=1
+  month+=1
+elif (month==4 or month ==6 or month==9 or month==11) and date==30:
+  nextdate=1
+  month+=1
+elif month==2 and date==28:
+   if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)):
+     nextdate=date+1
+
+   else:
+
+     nextdate=1
+     month+=1
+
+
+elif month==12 and date==31:
+  nextdate=1
+  month=1
+  year+=1
+elif date>31 or month>12:
+  print("Invalid entry")
+
+else:
+  nextdate=date+1
+
+
+print(f"Next date is {nextdate}/{month}/{year}")'''
+
+
+#Exercise 7
+#Accept scoreof student as input and calculate grade. 
+#Boundary Inclusive
+'''score=int(input("Enter your score:"))
+if score==100:
+  print("Perfect")
+elif score>=90 and score<=99: 
+  print("A")
+elif score>=80 and score<=89: 
+  print("B")
+elif score>=70 and score<=80: 
+  print("C")
+elif score>=60 and score<=70:
+  print("D")
+else:
+  print("F")'''
+
+
+#Boundary Exclusive:
+'''score=int(input("Enter your score:"))
+if score==100:
+  print("Perfect")
+elif score>89 and score<100: 
+  print("A")
+elif score>79 and score<90: 
+  print("B")
+elif score>69 and score<80: 
+  print("C")
+elif score>59 and score<70:
+  print("D")
+else:
+  print("F")'''
